@@ -33,7 +33,7 @@
 
 # 📖 MY-PORTFOLIO
 
-This project is a Hello Microverse repository. No complex coding is required for this exercise. The goal is to master all of the tools and best practices learned in previous steps. They will all be used in every Microverse project and most likely future jobs, and so it is important to know them!
+This project is my Portfolio's repository. No complex coding is required for this exercise. The goal is to master all of the tools and best practices learned in previous steps. They will all be used in every Microverse project and most likely future jobs, and so it is important to know them!
 1-HTML
 2-CSS
 3-Linters
