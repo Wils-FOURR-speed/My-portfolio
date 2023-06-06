@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -21,9 +22,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 40px;
- }
+}
 
- .intro {
+.intro {
   color: #172b4d;
   align-items: center;
   display: flex;
@@ -52,9 +53,9 @@ body {
   text-align: center;
   margin-bottom: 60px;
   margin-top: -1px;
- }
+}
 
- .social-media {
+.social-media {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,14 +63,9 @@ body {
   list-style: none;
   margin-top: -60;
   padding: 0;
- }
+}
 
- .drop-arrow {
+.drop-arrow {
   text-align: center;
   margin-top: 57px;
- }
-
- /* .introduction-container {
-  display: flex;
-  flex-direction: column
-
+}
