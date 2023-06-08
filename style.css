@@ -165,7 +165,6 @@ h3 {
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
   border: none;
 }
 
@@ -294,7 +293,7 @@ h4 {
 }
 
 footer {
-  background: url(footer.svg) no-repeat;
+  background: url(footer.svg) 100% 93% no-repeat;
 }
 
 .remarks > p {
@@ -312,13 +311,44 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 400px;
+  margin: auto;
   gap:15px;
   padding: 10px;
 }
 
-.footer-form > input {
-  padding: 10px;
+.footer-form > p {
+  font-size: 20px;
+}
+
+.name, .email {
+  padding: 15px;
   border: 1px solid #d0d9d4;
   outline: none;
   border-radius: 4px;
+}
+
+.name, .email, .footer-form > textarea {
+  background-color: #fff;
+}
+
+.footer-form > textarea {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.footer-form > input::placeholder {
+  font-style: italic;
+  color: #6b778c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-form > textarea::placeholder {
+  color: #42526e;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
