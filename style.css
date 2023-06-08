@@ -307,13 +307,13 @@ footer {
   width: 327px;
 }
 
-.footer-form{
+.footer-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 400px;
   margin: auto;
-  gap:15px;
+  gap: 15px;
   padding: 10px;
 }
 
@@ -321,15 +321,12 @@ footer {
   font-size: 20px;
 }
 
-.name, .email {
+.name,
+.email {
   padding: 15px;
   border: 1px solid #d0d9d4;
   outline: none;
   border-radius: 4px;
-}
-
-.name, .email, .footer-form > textarea {
-  background-color: #fff;
 }
 
 .footer-form > textarea {
@@ -338,16 +335,22 @@ footer {
   padding: 10px;
 }
 
-.footer-form > input::placeholder {
-  font-style: italic;
-  color: #6b778c;
+.name,
+.email,
+.footer-form > textarea {
+  background-color: #fff;
+}
+
+.footer-form > textarea::placeholder {
+  color: #42526e;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.footer-form > textarea::placeholder {
-  color: #42526e;
+.footer-form > input::placeholder {
+  font-style: italic;
+  color: #6b778c;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
