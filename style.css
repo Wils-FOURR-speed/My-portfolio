@@ -165,7 +165,6 @@ h3 {
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
   border: none;
 }
 
@@ -281,4 +280,78 @@ h4 {
   font-size: 24px;
   font-weight: 600;
   color: #344563;
+}
+
+.indicator2 {
+  width: 150px;
+  height: 6px;
+  margin: auto;
+  background: #172b4d;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: url(footer.svg) 100% 93% no-repeat;
+}
+
+.remarks > p {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  font-style: normal;
+  color: #172b4d;
+  margin: 30px auto 30px auto;
+  height: 363px;
+  width: 327px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  margin: auto;
+  gap: 15px;
+  padding: 10px;
+}
+
+.footer-form > p {
+  font-size: 20px;
+}
+
+.name,
+.email {
+  padding: 15px;
+  border: 1px solid #d0d9d4;
+  outline: none;
+  border-radius: 4px;
+}
+
+.footer-form > textarea {
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.name,
+.email,
+.footer-form > textarea {
+  background-color: #fff;
+}
+
+.footer-form > textarea::placeholder {
+  color: #42526e;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.footer-form > input::placeholder {
+  font-style: italic;
+  color: #6b778c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
