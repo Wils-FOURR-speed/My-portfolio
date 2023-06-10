@@ -165,7 +165,7 @@ h3 {
 
 .stories li {
   border-radius: 3px;
-  background-color: #d0d9d4;
+  background-color: #ebf0ee;
   padding: 5px;
 }
 
@@ -408,6 +408,7 @@ footer {
     font-size: 30px;
     font-weight: 800;
     line-height: 60px;
+    margin-top: 15px;
   }
 
   .career {
@@ -420,8 +421,10 @@ footer {
     font-size: 15px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: -1px;
+    margin-bottom: 150px;
+    margin-top: 30px;
+    width: 720px;
+    left: -10px;
   }
 
   .grid-container {
@@ -432,6 +435,8 @@ footer {
     height: 988px;
     gap: 5px;
     top: 176px;
+    justify-content: center;
+    align-items: center;
   }
 
   .grid-container,
@@ -463,11 +468,31 @@ footer {
   }
 
   .stories {
-    gap: 0.5rem;
+    display: flex;
+    list-style: none;
+    color: #3a4a42;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    top: 89px;
+    left: 20px;
+    height: 32px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    gap: 8px;
+  }
+
+  .stories li {
+    border-radius: 3px;
+    background-color: #ebf0ee;
+    padding: 5px;
   }
 
   .headline-section {
-    width: 500px;
+    height: 556px;
+    width: 720px;
   }
 
   .works {
@@ -494,6 +519,9 @@ footer {
     grid-template-columns: auto auto auto;
     flex-direction: column;
     grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
   }
 
   p {
@@ -502,22 +530,29 @@ footer {
     font-size: 15px;
     line-height: 32px;
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: -1px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 610px;
   }
 
   .last-part {
     display: flex;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    margin: 5px 5px;
+    width: 700px;
+    height: 490px;
   }
 
   .remarks > p {
     font-size: 20px;
     line-height: 30px;
-    width: 463px;
-    text-align: center;
+    width: 363px;
+    justify-content: center;
+    align-items: center;
     margin-top: 200px;
+    flex-grow: 0;
+    margin-left: 150px;
   }
 
   .footer-objects {
@@ -528,7 +563,7 @@ footer {
   .shape3 {
     display: flex;
     position: absolute;
-    right: -250px;
+    right: -192px;
     top: -200px;
   }
 
@@ -542,7 +577,7 @@ footer {
   .shape5 {
     display: flex;
     position: absolute;
-    left: 1030px;
+    left: 1010px;
     bottom: -180px;
   }
 
@@ -565,7 +600,8 @@ footer {
     margin: auto;
     list-style-type: none;
     gap: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: -15px;
   }
 
   .indicator2 {
@@ -579,11 +615,11 @@ footer {
     color: #fff;
     background-color: #36b37e;
     text-align: center;
-    margin-left: 390px;
+    margin: 0;
     padding: 20px;
-    right: -15px;
     border-radius: 4px;
     display: flex;
+    width: 140px;
     justify-content: center;
     border: none;
   }
@@ -696,7 +732,7 @@ footer {
     background-color: #d0d9d4;
     border: 2px solid #d0d9d4;
     border-radius: 10px 10px 5px 5px;
-    margin: 30px;
+    margin: 5px 5px;
     display: flex;
     flex-direction: column;
     padding-top: 200px;
