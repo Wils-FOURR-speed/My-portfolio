@@ -272,25 +272,6 @@ p {
   font-weight: 600;
 }
 
-.object-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5em;
-  padding-inline: inherit;
-  margin: 10px;
-}
-
-.object-list li {
-  list-style-type: none;
-  background-color: #fff;
-  color: #36b37e;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 12px;
-  font-weight: 600;
-}
-
 h4 {
   margin: -10px 0 30px;
   font-size: 24px;
@@ -405,6 +386,13 @@ footer {
 
   .full-name {
     display: flex;
+    width: 684px;
+    gap: 24px;
+  }
+
+  .first-name,
+  .last-name {
+    width: 330px;
   }
 
   .intro {
@@ -438,9 +426,12 @@ footer {
 
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    gap: 1px;
+    grid-template-columns: auto auto auto;
+    padding: 80px 0 80px 0;
+    width: 1171px;
+    height: 988px;
+    gap: 5px;
+    top: 176px;
   }
 
   .grid-container,
@@ -464,7 +455,7 @@ footer {
     display: flex;
     position: absolute;
     bottom: 7px;
-    left: -250px;
+    left: -150px;
   }
 
   .holder-container {
@@ -500,8 +491,9 @@ footer {
 
   .other-section {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     flex-direction: column;
+    grid-gap: 10px;
   }
 
   p {
@@ -517,11 +509,15 @@ footer {
   .last-part {
     display: flex;
     align-items: center;
+    width: 100%;
   }
 
   .remarks > p {
     font-size: 20px;
     line-height: 30px;
+    width: 463px;
+    text-align: center;
+    margin-top: 200px;
   }
 
   .footer-objects {
@@ -533,25 +529,29 @@ footer {
     display: flex;
     position: absolute;
     right: -250px;
-    top: -100px;
+    top: -200px;
   }
 
   .shape4 {
     display: flex;
     position: absolute;
     left: 300px;
-    bottom: -150px;
+    bottom: -50px;
   }
 
   .shape5 {
     display: flex;
     position: absolute;
-    left: 600px;
-    bottom: -200px;
+    left: 1030px;
+    bottom: -180px;
   }
 
   .footer-form > p {
     display: none;
+  }
+
+  .footer-form {
+    width: 50%;
   }
 
   .nav-menu {
@@ -572,19 +572,29 @@ footer {
     display: none;
   }
 
-  .footer-form > .get-button {
+  .get-button1 {
     font-size: 17px;
     font-weight: 400;
     line-height: 12px;
     color: #fff;
     background-color: #36b37e;
     text-align: center;
-    margin: auto;
+    margin-left: 390px;
     padding: 20px;
+    right: -15px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     border: none;
+  }
+
+  .get-button1:hover {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .get-button1:active {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    background: #008552;
   }
 
   .social-media {
@@ -601,17 +611,110 @@ footer {
     display: none;
   }
 
+  .footer-form > textarea {
+    border: 1px solid #60c095;
+    border-radius: 4px;
+    padding: 10px;
+    width: 684px;
+  }
+
   .social-media2 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
     list-style: none;
-    margin-top: 400px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     padding: 0;
   }
 
   .group1 {
     display: none;
+  }
+
+  .object3 {
+    background-color: #ebf0ee;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    height: 300px;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    border: 1px solid #c1c7d0;
+  }
+
+  .object4-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: auto;
+    padding: inherit;
+    width: 20rem;
+  }
+
+  .object4-list li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #36b37e;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .email {
+    width: 684px;
+  }
+
+  .object-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 15px;
+    margin: 10px;
+    width: 20rem;
+  }
+
+  .object-list li {
+    list-style-type: none;
+    background-color: #fff;
+    color: #36b37e;
+    padding: 3px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .pic-holder-container {
+    background-color: #d0d9d4;
+    border: 2px solid #d0d9d4;
+    border-radius: 10px 10px 5px 5px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    width: 20rem;
+  }
+
+  hr {
+    width: 1440px;
+    height: 1px;
+    background: #dfe1e6;
+    bottom: -50px;
+    margin-top: 200px;
+  }
+
+  .about-me {
+    width: 920px;
+    height: 240px;
+    margin: auto;
+    position: relative;
   }
 }
