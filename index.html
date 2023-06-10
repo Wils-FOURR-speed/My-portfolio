@@ -10,18 +10,28 @@
 </head>
 
 <body>
-
+    <main class="first-part">
     <header>
         <nav class="nav-menu">
             <img src="images/menu.svg" alt="menu">
         </nav>
+
+        <ul class="labels">
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </header>
-    <main>
+    
         <section>
             <div class="headline-section">
                 <div class="introduction-container">
                     <h1 class="intro">
                         Hey there.<br> I'm Wilsan.
+                        <span class="career">I'm a Software Developer</span>
+                    </h1>
+                    <h1 class="intro1">
+                        Hey there. I'm Wilsan.
                         <span class="career">I'm a Software Developer</span>
                     </h1>
                 </div>
@@ -52,14 +62,17 @@
         <h1 class="works">
             My Recent<br> <span>Works</span>
         </h1>
+        <h1 class="work">
+            My Recent Works
+        </h1>
         <div class="indicator"></div>
-        <section>
+        <section class="grid-container">
             <div class="pic-holder-container">
                 <div class="holder-container">
                     <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
                     <ul class="stories">
                         <li> Ruby on rails</li>
-                        <li> Css</li>
+                        <li> CSS</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                     </ul>
@@ -76,7 +89,7 @@
                     <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
                     <ul class="stories">
                         <li> Ruby on rails</li>
-                        <li> Css</li>
+                        <li> CSS</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                     </ul>
@@ -93,7 +106,7 @@
                     <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
                     <ul class="stories">
                         <li> Ruby on rails</li>
-                        <li> Css</li>
+                        <li>  CSS</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                     </ul>
@@ -110,7 +123,7 @@
                     <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
                     <ul class="stories">
                         <li> Ruby on rails</li>
-                        <li> Css</li>
+                        <li>  CSS</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                     </ul>
@@ -127,7 +140,7 @@
                     <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
                     <ul class="stories">
                         <li> Ruby on rails</li>
-                        <li> Css</li>
+                        <li>  CSS</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                     </ul>
@@ -144,7 +157,7 @@
                     <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
                     <ul class="stories">
                         <li> Ruby on rails</li>
-                        <li> Css</li>
+                        <li>  CSS</li>
                         <li>JavaScript</li>
                         <li>HTML</li>
                     </ul>
@@ -159,9 +172,12 @@
 
         <section class="about-me">
             <div class="about">
-                <h1 class="intro">About me</h1>
+                <h1 class="intro one">About me</h1>
                 <div class="object1">
                     <img src="Images 2/shape.svg" alt="object1">
+                </div>
+                <div class="object1b">
+                    <img src="shape-right.svg" alt="object1">
                 </div>
             </div>
             <p>
@@ -177,6 +193,9 @@
             </div>
             <div class="object2">
                 <img src="Images 2/shape2.svg" alt="object2">
+            </div>
+            <div class="object2b">
+                <img src="shape-left.svg" alt="object2">
             </div>
         </section>
 
@@ -224,21 +243,32 @@
         </section>
 
         <footer>
-            <div class="remarks">
-                <p>
-                    I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-                </p>
+            <div class="last-part">
+                <div class="remarks">
+                    <p>
+                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                    </p>
+                </div>
+    
+                <form method="POST" action="https://formspree.io/f/xzbqlowk" class="footer-form">
+                    <div class="full-name">
+                        <input type="text" name="first name" maxlength="30" placeholder="First name" class="first-name">
+                        <input type="text" name="last name" maxlength="30" placeholder="Last name" class="last-name">
+                    </div>
+                    <input type="text" name="full name" maxlength="30" placeholder="Full name" class="name" required>
+                    <input type="email" name="email" placeholder="Email address" class="email" required>
+                    <textarea name="comments" cols="30" rows="5" maxlength="500" placeholder="Hey I’d like to connect to..."></textarea>
+                    <input type="submit" value="Get in touch" class="get-button1">
+                    <p>wilsanfourrspeed@gmail.com</p>
+                </form>
+            </div>
+            <div class="footer-objects">
+                <img src="shape3.svg" alt="shape3" class="shape3">
+                <img src="shape4.svg" alt="shape4" class="shape4">
+                <img src="shape5.svg" alt="shape5" class="shape5">
             </div>
 
-            <form method="POST" action="https://formspree.io/f/xzbqlowk" class="footer-form">
-                <input type="text" name="full name" maxlength="30" placeholder="Full name" class="name" required>
-                <input type="email" name="email" placeholder="Email address" class="email" required>
-                <textarea name="comments" cols="30" rows="5" maxlength="500" placeholder="Hey I’d like to connect to..."></textarea>
-                <input type="submit" value="Get in touch" class="get-button">
-                <p>wilsanfourrspeed@gmail.com</p>
-            </form>
-
-            <div>
+            <div class="group1">
                 <ul class="social-media">
                     <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
                     <li><a href="#"><img src="images/Linkedin icon.svg" alt="Linkedin"></a></li>
@@ -247,6 +277,17 @@
                     <li><a href="#"><img src="images/angellist.svg" alt="Angellist"></a></li>
                 </ul>
             </div>
+
+                <hr>
+
+                <ul class="social-media2">
+                    <li><a href="#"><img src="images/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/Linkedin icon.svg" alt="Linkedin"></a></li>
+                    <li><a href="#"><img src="images/medium.svg" alt="Medium"></a></li>
+                    <li><a href="#"><img src="images/github.svg" alt="Github"></a></li>
+                    <li><a href="#"><img src="images/angellist.svg" alt="Angellist"></a></li>
+                </ul>
+            
             <div class="indicator2"></div>
         </footer>
     </section>
