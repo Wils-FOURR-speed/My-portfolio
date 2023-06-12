@@ -66,7 +66,7 @@ This project is my Portfolio's repository. No complex coding is required for thi
 
 - [Live Demo](Coming soon)
 
-<p align="right">(<a href="https://wils-fourr-speed.github.io/My-portfolio/">back to top</a>)</p>
+<p align="right">(<a href="https://wils-fourr-speed.github.io/My-portfolio/">click here</a>)</p>
 
 
 ## 💻 Getting Started <a name="getting-started"></a>
