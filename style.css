@@ -3,16 +3,23 @@
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nav-menu {
-  display: flex;
-  justify-content: flex-end;
+  
   padding: 15px;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  left: 140px;
+  top: -30px;
 }
 
 .first-part {
@@ -298,7 +305,7 @@ footer {
   margin: auto;
 }
 
-.remarks > p {
+.remarks>p {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -319,7 +326,7 @@ footer {
   padding: 10px;
 }
 
-.footer-form > p {
+.footer-form>p {
   font-size: 20px;
 }
 
@@ -337,7 +344,7 @@ footer {
   border-radius: 4px;
 }
 
-.footer-form > textarea {
+.footer-form>textarea {
   border: 1px solid #60c095;
   border-radius: 4px;
   padding: 10px;
@@ -345,11 +352,11 @@ footer {
 
 .name,
 .email,
-.footer-form > textarea {
+.footer-form>textarea {
   background-color: #fff;
 }
 
-.footer-form > textarea::placeholder {
+.footer-form>textarea::placeholder {
   color: #42526e;
   font-size: 15px;
   font-weight: 400;
@@ -369,7 +376,41 @@ footer {
   display: none;
 }
 
-@media (min-width: 600px) {
+.menuItems {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 772px;
+  list-style-type: none;
+  padding-top: 20px;
+  
+  
+}
+
+.listCan {
+  padding: 30px 0;
+  
+}
+
+.listCan li a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.closemenu {
+  position: absolute;
+  right: 50px;
+  width: 30px;
+  
+}
+
+@media (min-width: 768px) {
   .first-part {
     background: url(desktopbackground.svg);
     background-repeat: no-repeat;
@@ -378,6 +419,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 40px;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .name {
@@ -544,7 +589,7 @@ footer {
     height: 490px;
   }
 
-  .remarks > p {
+  .remarks>p {
     font-size: 20px;
     line-height: 30px;
     width: 363px;
@@ -581,7 +626,7 @@ footer {
     bottom: -180px;
   }
 
-  .footer-form > p {
+  .footer-form>p {
     display: none;
   }
 
@@ -643,11 +688,11 @@ footer {
     padding: 0;
   }
 
-  .footer-form > .social-media {
+  .footer-form>.social-media {
     display: none;
   }
 
-  .footer-form > textarea {
+  .footer-form>textarea {
     border: 1px solid #60c095;
     border-radius: 4px;
     padding: 10px;
