@@ -11,7 +11,6 @@ body {
 }
 
 .nav-menu {
-  
   padding: 15px;
   position: relative;
 }
@@ -76,7 +75,7 @@ body {
   justify-content: center;
   gap: 1rem;
   list-style: none;
-  margin-top: -60;
+  margin-top: -60px;
   padding: 0;
 }
 
@@ -305,7 +304,7 @@ footer {
   margin: auto;
 }
 
-.remarks>p {
+.remarks > p {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -326,7 +325,7 @@ footer {
   padding: 10px;
 }
 
-.footer-form>p {
+.footer-form > p {
   font-size: 20px;
 }
 
@@ -344,7 +343,7 @@ footer {
   border-radius: 4px;
 }
 
-.footer-form>textarea {
+.footer-form > textarea {
   border: 1px solid #60c095;
   border-radius: 4px;
   padding: 10px;
@@ -352,11 +351,11 @@ footer {
 
 .name,
 .email,
-.footer-form>textarea {
+.footer-form > textarea {
   background-color: #fff;
 }
 
-.footer-form>textarea::placeholder {
+.footer-form > textarea::placeholder {
   color: #42526e;
   font-size: 15px;
   font-weight: 400;
@@ -389,7 +388,7 @@ footer {
 }
 
 .listCan {
-  padding: 30px 0; 
+  padding: 30px 0;
 }
 
 .listCan li a {
@@ -404,7 +403,6 @@ footer {
   position: absolute;
   right: 50px;
   width: 30px;
-  
 }
 
 @media (min-width: 768px) {
@@ -586,7 +584,7 @@ footer {
     height: 490px;
   }
 
-  .remarks>p {
+  .remarks > p {
     font-size: 20px;
     line-height: 30px;
     width: 363px;
@@ -623,7 +621,7 @@ footer {
     bottom: -180px;
   }
 
-  .footer-form>p {
+  .footer-form > p {
     display: none;
   }
 
@@ -681,15 +679,15 @@ footer {
     justify-content: center;
     gap: 1rem;
     list-style: none;
-    margin-top: -60;
+    margin-top: -60px;
     padding: 0;
   }
 
-  .footer-form>.social-media {
+  .footer-form > .social-media {
     display: none;
   }
 
-  .footer-form>textarea {
+  .footer-form > textarea {
     border: 1px solid #60c095;
     border-radius: 4px;
     padding: 10px;
