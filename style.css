@@ -376,9 +376,20 @@ footer {
   display: none;
 }
 
+.menuItems {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 772px;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
 .listCan {
-  padding: 30px 0;
-  
+  padding: 30px 0; 
 }
 
 .listCan li a {
