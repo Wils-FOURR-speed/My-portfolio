@@ -385,6 +385,7 @@ footer {
   height: 772px;
   list-style-type: none;
   padding-top: 20px;
+  z-index: 999;
 }
 
 .listCan {
@@ -396,7 +397,7 @@ footer {
   color: #3a4a42;
   font-size: 32px;
   font-weight: 600;
-  line-height: 44px;
+  line-height: 70px;
 }
 
 .closemenu {
