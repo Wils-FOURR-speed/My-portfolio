@@ -3,16 +3,22 @@
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nav-menu {
-  display: flex;
-  justify-content: flex-end;
   padding: 15px;
+  position: relative;
+}
+
+.hamburger {
+  position: absolute;
+  left: 140px;
+  top: -30px;
 }
 
 .first-part {
@@ -69,7 +75,7 @@ body {
   justify-content: center;
   gap: 1rem;
   list-style: none;
-  margin-top: -60;
+  margin-top: -60px;
   padding: 0;
 }
 
@@ -371,7 +377,38 @@ footer {
   display: none;
 }
 
-@media (min-width: 600px) {
+.menuItems {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 772px;
+  list-style-type: none;
+  padding-top: 20px;
+  z-index: 999;
+}
+
+.listCan {
+  padding: 30px 0;
+}
+
+.listCan li a {
+  text-decoration: none;
+  color: #3a4a42;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+.closemenu {
+  position: absolute;
+  right: 50px;
+  width: 30px;
+}
+
+@media (min-width: 768px) {
   .first-part {
     background: url(desktopbackground.svg);
     background-repeat: no-repeat;
@@ -380,6 +417,10 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 40px;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 
   .name {
@@ -641,7 +682,7 @@ footer {
     justify-content: center;
     gap: 1rem;
     list-style: none;
-    margin-top: -60;
+    margin-top: -60px;
     padding: 0;
   }
 
