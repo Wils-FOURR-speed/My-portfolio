@@ -1,5 +1,6 @@
-const btnmenu = document.getElementById('menu');// \r\n
-const item = document.getElementById('item');// \r\n
+const btnmenu = document.getElementById('menu');
+
+const item = document.getElementById('item');
 const btnclose = document.getElementById('close');
 btnmenu.addEventListener('click', () => {
   item.style = 'display: block;';
