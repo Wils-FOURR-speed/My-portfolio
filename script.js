@@ -24,9 +24,7 @@ btnclose.addEventListener('click', () => {
   item.style = 'display: none;';
 });
 
-// form
 const data = [];
-// 1
 submit.addEventListener('click', () => {
   if (emailval.value === emailval.value.toLowerCase() && emailval.value !== '') {
     data[0] = Myname.value;
@@ -38,7 +36,6 @@ submit.addEventListener('click', () => {
   }
 });
 
-// 2
 window.addEventListener('load', () => {
   if (localStorage.getItem('local') === null) {
     Myname.value = '';
