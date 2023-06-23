@@ -37,3 +37,17 @@ submit.addEventListener('click', () => {
     terror.textContent = 'error';
   }
 });
+
+// 2
+window.addEventListener('load', () => {
+  if (localStorage.getItem('local') === null) {
+    Myname.value = '';
+    emailval.value = '';
+    comments.value = '';
+  } else {
+    const set = JSON.parse(localStorage.getItem('local'));
+    Myname.value = set[0];
+    emailval.value = set[1];
+    comments.value = set[2];
+  }
+});
