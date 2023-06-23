@@ -211,19 +211,19 @@
                 </p>
             </div>
 
-            <form method="POST" action="https://formspree.io/f/xzbqlowk" class="footer-form">
+            <form method="POST" class="footer-form" action="https://formspree.io/f/xzbqlowk">
                 <div class="full-name">
-                    <input type="text" name="first name" maxlength="30" placeholder="First name" class="first-name">
-                    <input type="text" name="last name" maxlength="30" placeholder="Last name" class="last-name">
+                    <input type="text" name="first name" maxlength="30" placeholder="First name" class="first-name" required>
+                    <input type="text" name="last name" maxlength="30" placeholder="Last name" class="last-name" required>
                 </div>
                 <input type="text" name="full name" maxlength="30" placeholder="Full name" class="name" required>
-                <input type="email" name="email" placeholder="Email address" class="email" required>
+                <input type="email" name="email" placeholder="Email address" class="email">
                 <textarea id="comments" name="comments" cols="30" rows="5" maxlength="500"
                     placeholder="Hey I’d like to connect to..."></textarea>
 
                 <div class="flex">
-                    <input type="submit" value="Get in touch" class="get-button1">
-                    <p id="error"></p>
+                    <input type="submit" value="Get in touch" class="get-button1" id="getbtn">
+                    <p class="error-message" id="error"></p>
 
                 </div>
 

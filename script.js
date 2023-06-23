@@ -8,7 +8,6 @@ const submit = document.querySelector('.get-button1');
 const terror = document.getElementById('error');
 const Myname = document.querySelector('.name');
 const comments = document.getElementById('comments');
-
 items.forEach((it) => {
   it.addEventListener('click', () => {
     item.style = 'display: none;';
@@ -25,14 +24,15 @@ btnclose.addEventListener('click', () => {
 });
 
 const data = [];
-submit.addEventListener('click', () => {
+submit.addEventListener('click', (e) => {
   if (emailval.value === emailval.value.toLowerCase() && emailval.value !== '') {
     data[0] = Myname.value;
     data[1] = emailval.value;
     data[2] = comments.value;
     localStorage.setItem('local', JSON.stringify(data));
   } else {
-    terror.textContent = 'error';
+    terror.textContent = 'Error!! Please add valid email';
+    e.preventDefault();
   }
 });
 
@@ -42,9 +42,9 @@ window.addEventListener('load', () => {
     emailval.value = '';
     comments.value = '';
   } else {
-    const set = JSON.parse(localStorage.getItem('local'));
-    Myname.value = set[0];
-    emailval.value = set[1];
-    comments.value = set[2];
+    const [set, col, me] = JSON.parse(localStorage.getItem('local'));
+    Myname.value = set;
+    emailval.value = col;
+    comments.value = me;
   }
 });

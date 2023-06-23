@@ -436,6 +436,10 @@ footer {
   display: flex;
 }
 
+.error-message {
+  color: #f00;
+}
+
 #carddetailsmain {
   position: fixed;
   top: 0;
