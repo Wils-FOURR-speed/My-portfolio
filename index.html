@@ -87,108 +87,53 @@
         <div class="indicator"></div>
 
     </section>
-    <section class="grid-container">
-        <div class="pic-holder-container">
-            <div class="holder-container">
-                <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
-                <ul class="stories">
-                    <li> Ruby on rails</li>
-                    <li> CSS</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                </ul>
-                <div>
-                    <button class="get-button">
-                        See Project
-                    </button>
-                </div>
-            </div>
-        </div>
+    <div id="carddetailsmain">
+        <div id="carddetails">
+            <button class="dclosebtn"><img src="./close.svg" alt="" width="30px"></button>
+            <img src="./capture.svg" alt="" class="capture">
 
-        <div class="pic-holder-container">
-            <div class="holder-container">
-                <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
-                <ul class="stories">
-                    <li> Ruby on rails</li>
-                    <li> CSS</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                </ul>
-                <div>
-                    <button class="get-button">
-                        See Project
-                    </button>
+            <div class="flex spaceb">
+                <h2 id="tit">
+                    Keeping track of hundreds of <br>
+                    components
+                </h2>
+                <div class="flexBtn">
+                    <a href="https://wils-fourr-speed.github.io/My-portfolio/" class="dbtn">see live <img src="live.svg" alt=""></a>
+                    <a href="https://github.com/Wils-FOURR-speed/My-portfolio" class="dbtn">see source <img src="github.svg" alt=""></a>
                 </div>
-            </div>
-        </div>
 
-        <div class="pic-holder-container">
-            <div class="holder-container">
-                <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
-                <ul class="stories">
-                    <li> Ruby on rails</li>
-                    <li> CSS</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                </ul>
-                <div>
-                    <button class="get-button">
-                        See Project
-                    </button>
-                </div>
             </div>
-        </div>
+            
+            <div class=" stories sto" id="tech">
+               
+            </div>
 
-        <div class="pic-holder-container">
-            <div class="holder-container">
-                <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
-                <ul class="stories">
-                    <li> Ruby on rails</li>
-                    <li> CSS</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                </ul>
-                <div>
-                    <button class="get-button">
-                        See Project
-                    </button>
+            <p id="dicriptss">
+                Lorem Ipsum is simply dummy text 
+                of the printing and typesetting 
+                industry. Lorem Ipsum has been the 
+                industry's standard dummy text ever 
+                since the 1500s, when an unknown printer 
+                took a galley of type and scrambled it 1960s 
+                with the releaLorem Ipsum is simply dummy text 
+                of the printing and typesetting industry.
+                 Lorem Ipsum has been the industry's standard 
+                 dummy text ever since the 1500s, when an
+                  unknown printer took a galley of type and 
+                  scrambled it 1960s with the relea
+                </p>
+                <div class="flexBtn mobile">
+                    <a href="https://wils-fourr-speed.github.io/My-portfolio/" class="dbtn">see live <img src="live.svg" alt=""></a>
+                    <a href="https://github.com/Wils-FOURR-speed/My-portfolio" class="dbtn">see source <img src="github.svg" alt=""></a>
                 </div>
-            </div>
-        </div>
 
-        <div class="pic-holder-container">
-            <div class="holder-container">
-                <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
-                <ul class="stories">
-                    <li> Ruby on rails</li>
-                    <li> CSS</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                </ul>
-                <div>
-                    <button class="get-button">
-                        See Project
-                    </button>
-                </div>
-            </div>
         </div>
+    </div>
+    <section class="grid-container" id="cards">
 
-        <div class="pic-holder-container">
-            <div class="holder-container">
-                <h3>Multi-Post Stories <span>Gain + Glory</span></h3>
-                <ul class="stories">
-                    <li> Ruby on rails</li>
-                    <li> CSS</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                </ul>
-                <div>
-                    <button class="get-button">
-                        See Project
-                    </button>
-                </div>
-            </div>
-        </div>
+
+
+
     </section>
 
     <section class="about-me" id="About">
@@ -271,27 +216,48 @@
                 </p>
             </div>
 
-            <form method="POST" action="https://formspree.io/f/xzbqlowk" class="footer-form">
+            <form method="POST" class="footer-form" action="https://formspree.io/f/xzbqlowk">
                 <div class="full-name">
-                    <input type="text" name="first name" maxlength="30" placeholder="First name" class="first-name">
-                    <input type="text" name="last name" maxlength="30" placeholder="Last name" class="last-name">
+                    <input type="text" name="first name" maxlength="30" placeholder="First name" class="first-name" id="firstName" required>
+                    <input type="text" name="last name" maxlength="30" placeholder="Last name" class="last-name" id="lastName" required>
                 </div>
                 <input type="text" name="full name" maxlength="30" placeholder="Full name" class="name" required>
-                <input type="email" name="email" placeholder="Email address" class="email" required>
-                <textarea name="comments" cols="30" rows="5" maxlength="500"
+                <input type="email" name="email" placeholder="Email address" class="email">
+                <textarea id="comments" name="comments" cols="30" rows="5" maxlength="500"
                     placeholder="Hey I’d like to connect to..."></textarea>
-                <input type="submit" value="Get in touch" class="get-button1">
+
+                <div class="flex">
+                    <input type="submit" value="Get in touch" class="get-button1" id="getbtn">
+                    <p class="error-message" id="error"></p>
+
+                </div>
+
                 <p>wilsanfourrspeed@gmail.com</p>
             </form>
         </div>
         <div class="footer-objects">
-            <img src="shape3.svg" alt="left footer background image" class="shape3">
-            <img src="shape4.svg" alt="middle footer background image" class="shape4">
-            <img src="shape5.svg" alt="right footer background image" class="shape5">
-        </div>
 
-        <div class="group1">
-            <ul class="social-media">
+
+
+            <div class="group1">
+                <ul class="social-media">
+                    <li><a href="#"><img src="images/twitter.svg"
+                                alt="The twitter logo to lead you to my twitter account for more connection"></a></li>
+                    <li><a href="#"><img src="images/Linkedin icon.svg"
+                                alt="The Linkedin logo to lead you to my Linkedin account for more connection"></a></li>
+                    <li><a href="#"><img src="images/medium.svg"
+                                alt="The medium logo to lead you to my medium's page for more connection"></a></li>
+                    <li><a href="#"><img src="images/github.svg"
+                                alt="The Github icon to lead you to my github account for more view on other projects"></a>
+                    </li>
+                    <li><a href="#"><img src="images/angellist.svg"
+                                alt="The Angellist icon to my Angellist account for more connection"></a></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <ul class="social-media2">
                 <li><a href="#"><img src="images/twitter.svg"
                             alt="The twitter logo to lead you to my twitter account for more connection"></a></li>
                 <li><a href="#"><img src="images/Linkedin icon.svg"
@@ -304,26 +270,12 @@
                 <li><a href="#"><img src="images/angellist.svg"
                             alt="The Angellist icon to my Angellist account for more connection"></a></li>
             </ul>
-        </div>
 
-        <hr>
-
-        <ul class="social-media2">
-            <li><a href="#"><img src="images/twitter.svg"
-                        alt="The twitter logo to lead you to my twitter account for more connection"></a></li>
-            <li><a href="#"><img src="images/Linkedin icon.svg"
-                        alt="The Linkedin logo to lead you to my Linkedin account for more connection"></a></li>
-            <li><a href="#"><img src="images/medium.svg"
-                        alt="The medium logo to lead you to my medium's page for more connection"></a></li>
-            <li><a href="#"><img src="images/github.svg"
-                        alt="The Github icon to lead you to my github account for more view on other projects"></a></li>
-            <li><a href="#"><img src="images/angellist.svg"
-                        alt="The Angellist icon to my Angellist account for more connection"></a></li>
-        </ul>
-
-        <div class="indicator2"></div>
+            <div class="indicator2"></div>
     </footer>
+
 </body>
 <script src="script.js"></script>
+<script src="local.js"></script>
 
 </html>
