@@ -460,7 +460,7 @@ footer {
 
 #carddetails {
   background-color: #fff;
-  width: 620px;
+  width: 690px;
   left: 0;
   top: 0;
   border-radius: 8px;
@@ -483,19 +483,51 @@ footer {
   cursor: pointer;
 }
 
+.flexBtn {
+  display: flex;
+  gap: 15px;
+}
+
+.mobile {
+  display: none;
+}
+
 .dbtn {
   line-height: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
   color: #fff;
   background-color: #36b37e;
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 15px;
   border-radius: 4px;
   border: none;
+  text-decoration: none;
+}
+
+.dbtn:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.dbtn:active {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  background: #008552;
 }
 
 .spaceb {
   justify-content: space-between;
   margin: 10px 0;
+}
+
+@media (max-width: 760px) {
+  .flexBtn {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
