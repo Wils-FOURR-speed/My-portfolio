@@ -305,7 +305,7 @@ footer {
   padding: 0 0 50px 0;
 }
 
-.remarks>p {
+.remarks > p {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -326,7 +326,7 @@ footer {
   padding: 10px;
 }
 
-.footer-form>p {
+.footer-form > p {
   font-size: 20px;
 }
 
@@ -344,7 +344,7 @@ footer {
   border-radius: 4px;
 }
 
-.footer-form>textarea {
+.footer-form > textarea {
   border: 1px solid #60c095;
   border-radius: 4px;
   padding: 10px;
@@ -352,11 +352,11 @@ footer {
 
 .name,
 .email,
-.footer-form>textarea {
+.footer-form > textarea {
   background-color: #fff;
 }
 
-.footer-form>textarea::placeholder {
+.footer-form > textarea::placeholder {
   color: #42526e;
   font-size: 15px;
   font-weight: 400;
@@ -454,22 +454,25 @@ footer {
 }
 
 #carddetailsmain p {
-  font-family: Inter;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
+  line-height: 20px;
+  letter-spacing: 0;
   text-align: left;
+  height: 200px;
+}
+
+#tec li {
+  height: 1px;
+  font-size: 1px;
 }
 
 #tit {
-  font-family: Inter;
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-
 }
 
 #carddetails {
@@ -485,7 +488,7 @@ footer {
 .capture {
   width: 100%;
   border-radius: 8px;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border: none;
 }
@@ -543,6 +546,16 @@ footer {
   .mobile {
     display: flex;
   }
+
+  #carddetails {
+    width: 100%;
+  }
+
+  .sto {
+    justify-content: start;
+    padding: 0;
+    font-size: 7px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -554,6 +567,52 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 40px;
+  }
+
+  .dbtn {
+    width: 115px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 8px;
+    gap: 10px;
+  }
+
+  p {
+    color: #172b4d;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 610px;
+  }
+
+  .remarks > p {
+    font-size: 20px;
+    line-height: 30px;
+    width: 363px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    flex-grow: 0;
+    margin-left: 150px;
+  }
+
+  .footer-form > p {
+    display: none;
+  }
+
+  #carddetailsmain p {
+    height: 200px;
+  }
+
+  #tit {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0;
+    text-align: left;
   }
 
   body {
@@ -710,17 +769,6 @@ footer {
     margin-top: 80px;
   }
 
-  p {
-    color: #172b4d;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 32px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 0;
-    width: 610px;
-  }
-
   .last-part {
     display: flex;
     align-items: center;
@@ -729,17 +777,6 @@ footer {
     width: 700px;
     min-height: 490px;
     padding: 0 0 500px 0;
-  }
-
-  .remarks>p {
-    font-size: 20px;
-    line-height: 30px;
-    width: 363px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    flex-grow: 0;
-    margin-left: 150px;
   }
 
   .footer-objects {
@@ -766,10 +803,6 @@ footer {
     position: absolute;
     left: 1010px;
     bottom: -180px;
-  }
-
-  .footer-form>p {
-    display: none;
   }
 
   .footer-form {
@@ -830,11 +863,11 @@ footer {
     padding: 0;
   }
 
-  .footer-form>.social-media {
+  .footer-form > .social-media {
     display: none;
   }
 
-  .footer-form>textarea {
+  .footer-form > textarea {
     border: 1px solid #60c095;
     border-radius: 4px;
     padding: 10px;
