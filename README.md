@@ -64,7 +64,7 @@ This project is my Portfolio's repository. No complex coding is required for thi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](Coming soon)
+- [Live Demo](Coming very soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
